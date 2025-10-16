@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남양주 교통 웹툰 - 교통혁명 도시 남양주</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-placeholder"></div>
+                    <h1 class="site-title">남양주 교통 웹툰</h1>
+                </div>
+                <nav class="main-nav">
+                    <a href="#home" class="nav-link active">홈</a>
+                    <a href="#episodes" class="nav-link">웹툰</a>
+                    <a href="#policies" class="nav-link">정책정보</a>
+                    <a href="#contact" class="nav-link">문의</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">교통혁명 도시 남양주!</h2>
+                <p class="hero-subtitle">웹툰으로 만나는 교통정책</p>
+                <p class="hero-description">상상 그 이상의 연결, 100만 메가시티로 도약하는 남양주의 교통혁신을 웹툰으로 만나보세요!</p>
+                <button class="btn btn--primary btn--lg hero-cta">웹툰 보러가기</button>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-character"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section id="episodes" class="episodes">
+        <div class="container">
+            <h2 class="section-title">웹툰 에피소드</h2>
+            <p class="section-subtitle">남양주 교통정책을 재미있는 웹툰으로 만나보세요</p>
+            
+            <div class="episodes-grid">
+                <div class="episode-card" data-episode="1">
+                    <div class="episode-thumbnail ep1"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">별내선 개통, 잠실까지 20분!</h3>
+                        <p class="episode-description">별내선(8호선 연장) 개통으로 별내-잠실 20분대 연결되는 이야기</p>
+                        <div class="episode-meta">
+                            <span class="episode-status completed">✅ 완료</span>
+                            <span class="episode-likes">❤️ 1,234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card" data-episode="2">
+                    <div class="episode-thumbnail ep2"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">GTX 5개 노선, 남양주가 중심!</h3>
+                        <p class="episode-description">전국 유일 5개 GTX 노선 확보로 2030년 서울까지 20분대 접근</p>
+                        <div class="episode-meta">
+                            <span class="episode-status progress">🚧 추진중</span>
+                            <span class="episode-likes">❤️ 2,156</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card" data-episode="3">
+                    <div class="episode-thumbnail ep3"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">친환경 전기버스의 등장</h3>
+                        <p class="episode-description">2층 전기버스 도입으로 매연 감소와 승차감 향상</p>
+                        <div class="episode-meta">
+                            <span class="episode-status active">🚌 운행중</span>
+                            <span class="episode-likes">❤️ 1,876</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card" data-episode="4">
+                    <div class="episode-thumbnail ep4"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">스마트 교통시스템</h3>
+                        <p class="episode-description">AI, IoT 활용한 실시간 교통관리 시스템</p>
+                        <div class="episode-meta">
+                            <span class="episode-status planned">📅 2029년 예정</span>
+                            <span class="episode-likes">❤️ 987</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card" data-episode="5">
+                    <div class="episode-thumbnail ep5"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">도로 인프라 대혁신</h3>
+                        <p class="episode-description">수도권제2순환고속도로 개통과 교통체계 개선</p>
+                        <div class="episode-meta">
+                            <span class="episode-status completed">✅ 완료</span>
+                            <span class="episode-likes">❤️ 1,543</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card" data-episode="6">
+                    <div class="episode-thumbnail ep6"></div>
+                    <div class="episode-info">
+                        <h3 class="episode-title">100만 메가시티의 꿈</h3>
+                        <p class="episode-description">왕숙신도시와 교통망 연계로 자족기능 갖춘 미래도시</p>
+                        <div class="episode-meta">
+                            <span class="episode-status progress">🚧 추진중</span>
+                            <span class="episode-likes">❤️ 2,341</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webtoon Viewer Modal -->
+    <div id="webtoonModal" class="webtoon-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle" class="modal-title">웹툰 제목</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="webtoonViewer" class="webtoon-viewer">
+                    <!-- 웹툰 컷들이 여기에 동적으로 생성됩니다 -->
+                </div>
+                <div class="webtoon-actions">
+                    <button class="btn btn--secondary like-btn">
+                        <span class="like-icon">❤️</span>
+                        <span class="like-text">좋아요</span>
+                        <span class="like-count">0</span>
+                    </button>
+                    <button class="btn btn--outline share-btn">📤 공유하기</button>
+                </div>
+                <div class="related-policy">
+                    <h4>관련 정책 정보</h4>
+                    <div id="policyInfo" class="policy-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Policies Section -->
+    <section id="policies" class="policies">
+        <div class="container">
+            <h2 class="section-title">남양주시 교통정책</h2>
+            <p class="section-subtitle">시민이 체감하는 교통혁신 정책들</p>
+            
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <div class="policy-icon transport"></div>
+                    <h3>별내선 개통</h3>
+                    <p>2024년 8월 개통으로 별내-잠실 20분대 연결</p>
+                    <div class="policy-status completed">✅ 완료</div>
+                </div>
+                
+                <div class="policy-card">
+                    <div class="policy-icon gtx"></div>
+                    <h3>GTX 5개 노선</h3>
+                    <p>GTX-B,D,E,F,G 노선으로 전국 유일 확보</p>
+                    <div class="policy-status progress">🚧 추진중</div>
+                </div>
+                
+                <div class="policy-card">
+                    <div class="policy-icon eco"></div>
+                    <h3>친환경 전기버스</h3>
+                    <p>2층 전기버스 70석으로 60% 증가</p>
+                    <div class="policy-status active">🚌 운행중</div>
+                </div>
+                
+                <div class="policy-card">
+                    <div class="policy-icon smart"></div>
+                    <h3>스마트시티 센터</h3>
+                    <p>AI/IoT 기반 실시간 교통관리</p>
+                    <div class="policy-status planned">📅 2029년 예정</div>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>시민 혜택</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon time"></div>
+                        <span>출퇴근 시간 단축</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon air"></div>
+                        <span>대기질 개선</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon money"></div>
+                        <span>교통비 절약</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon safety"></div>
+                        <span>안전한 교통환경</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>남양주시 교통정책과</h4>
+                    <p>📞 031-590-2000</p>
+                    <p>📧 traffic@nyj.go.kr</p>
+                    <p>📍 경기도 남양주시 경춘로 1037</p>
+                </div>
+                <div class="footer-section">
+                    <h4>관련 링크</h4>
+                    <a href="#" target="_blank">남양주시청</a>
+                    <a href="#" target="_blank">교통정책 공지사항</a>
+                    <a href="#" target="_blank">시민참여 게시판</a>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">페이스북</a>
+                        <a href="#" target="_blank">인스타그램</a>
+                        <a href="#" target="_blank">유튜브</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 남양주시. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
